@@ -1,0 +1,824 @@
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        .body{
+        width: 100%;
+        height: 100vh;
+        background: url(./img/12.jpeg) ;
+        opacity: 100%;
+        background-size: 100% 100%;
+        /* background-attachment:fixed; */
+            color: black;
+        }
+
+        .display-background{
+            height: 100%;
+        }
+
+        .toggle-button {
+            right: 1rem;
+            display:none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+        .toggle-button .bar {
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: transparent;
+        padding: 10px;
+        }
+        .show{
+            height: 80%;
+            width: 90%;
+            background-color:rgba(229, 123, 48, 0.827);
+            z-index: 2;
+            box-shadow: 0 0 80px black;
+            position: fixed;
+            top: 70px;
+            z-index: 99;
+            cursor: pointer;
+            margin-left: 10px;
+            display: none;
+        }
+        .show h4 a{
+            position: absolute;
+            /* background-color: green; */
+            right: 0;
+            font-size: 50px;
+        }
+        
+
+        .show ul{
+            /* background-color: blue; */
+            width: 70%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 10px;
+        }
+        .show ul li{
+            width: 90%;
+        }
+
+
+        .social{
+            position: fixed;
+            right: 5px;
+        
+            top: 100px;
+        z-index: 99; 
+        background-color: transparent;
+        width: auto;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 10px black;
+        }
+
+
+
+        .logo{
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        li{
+            list-style-type: none;
+            border-bottom: 2px solid transparent;
+            transition-property:border-bottom;
+            transition-duration: 0.9s;
+            transition-timing-function: ease-out
+        }
+        li:hover{
+        border-bottom: 2px solid rgb(63, 11, 11);
+        }
+        ul{
+            display: flex;   
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            margin: 5px 10px;
+            font-size: 25px;
+            font-weight:bold;
+        }
+
+        /* Home */
+
+
+        .display-container{
+            height: 100%;
+        
+        }
+        .display-item{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .display-item .text{
+            width: 100%;
+            justify-content: center;
+        }
+        .display-item h2{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+
+        .text{
+            width: 50%;
+            height: 400px;
+            margin:0 10px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .text h2{
+            font-size: 60px;
+        }
+
+
+
+        /* About Section */
+        .about{
+            background-color:white;
+            color: black;
+        }
+        .about-container{
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .navigation{
+            height: 10vh;
+            width: 50%;
+            margin-left: 30%;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navigation h1{
+            font-size: 40px;
+        }
+
+        .about-bar li a{
+            font-size: 40px;
+        }
+        .about-container h2{
+            font-size: 40px;
+            background-color: green;
+        }
+
+        .about-container h3{
+            font-size: 40px;
+            width: 100%;
+        }
+        .about-container p{
+            width: 100%;
+            text-align: center;
+            font-size: 19px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .about-text{
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 50px 0;
+            justify-content: space-around;
+        }
+        .ab-text{
+            width: 50%;
+        text-align: center;
+        margin: 0 5px;
+        }
+        .about-image{
+            width: 90%;
+            height: 50%;
+            opacity: 0.9;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .first{
+            height: 330px;
+        }
+        .second{
+            width: 800px;
+            height: 280px;
+        }
+        .third{
+            width: 800px;
+            height: 280px;
+        }
+
+        /* Furnitures Display */
+
+        .furnitures-container{
+            height: 100vh;
+            overflow: hidden;
+            }
+        
+        .furniture-items{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        }
+        .style{
+            width: 50%;
+            height: 100%;
+        }
+        .furniture-one{
+            width: 50%;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .furniture-one h2{
+            font-size: 50px;
+            font-weight: bold; 
+        }
+        .furniture-one p{
+            font-size: 20px;
+            text-align: center; 
+            width: 90%;
+            margin: 20px 0;
+            /* background-color: gold; */
+        }
+        
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.907);
+            color: white;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.969);
+            color: white;
+            transition:  500ms ease-in-out;
+        }
+        button:active{
+            transform: scale(0.98);
+        }
+        .furniture-two{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .furniture-two img{
+            position: absolute;
+            height: auto;
+            width: 90%;
+        }
+        .bottom{
+        bottom: 10%;
+        left: 1px;
+        
+        }
+        .bottomm{
+            bottom: -80px;
+            left: -60px;
+        
+            }
+        
+ 
+ 
+
+
+        /* Contact Section */
+        .contact-container{
+            overflow: hidden;
+            height: 100vh;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          background-size: 100% 100%;
+        }
+        .contact-container h2{
+            font-size: 50px;
+            font-weight: 400;
+            text-align: center;
+        }
+        .contact-background{
+            width: 100%;
+            height: 30%;
+        }
+        .contact-text{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+      
+
+        .contact-box{
+            width:60% ;
+            height: auto;
+            margin: 0 40px;
+           border-radius: 10px;
+           box-shadow: 0 0 3px black;
+        }
+        .contact-box-items{
+            width:100% ;
+            height: 100%;
+              display: flex;
+           align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 50px 10px;
+        }
+        .contact-box-items h2{
+         font-size: 30px;
+         text-align:start;
+         margin-bottom: 20px;
+        }
+
+        .contact-info{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .images{
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .img{
+  
+            width: 40px;
+            height: 40px;
+           border-radius: 50px;
+          background-color: white;
+            box-shadow: 0 0 20px white;
+            margin: 0 15px;
+        }
+         
+
+        .contact-me{
+            width: auto;
+            height: 50%;
+            border-radius: 10px;
+            margin:0 30px;
+        }
+        
+
+        .contact-me-items{
+            height: 100%;
+             display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+    
+         .imgg{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+         }
+        .contact-me h2{
+            font-size: 30px;
+            margin: 0 20px;
+            font-weight: bold;
+            text-align: start;
+        }
+        .contact-me h5{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 10px;
+        }
+        .contact-me h4{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    
+    
+       
+        input{
+            font-size: 20px;
+            border-radius: 5px;
+            text-align: start;
+            border: 0px solid black;
+           background-color: rgb(235, 233, 233);
+            margin-bottom: 10px;
+        }
+        .contact-name{  
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .contact-name input{
+          width: 50%;
+          height: 50px;
+           margin: 0 5px;
+        }
+        .subject{  
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .subject input{
+            width: 80%;
+            height: 50px;
+            margin: 0 5px;
+          }
+          .message{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+         
+    
+          .message input{
+            width: 90%;
+            height: 100px;
+            text-align: top;
+            margin: 0 5px;
+          }
+          .space{
+            margin: 10px 0;
+          }
+    
+        /* Footer Container */
+
+    .footer-container{
+        height: 10vh;
+        background-color:black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        border-top: 5px solid black;
+    }
+    .footer-container h1{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+   
+@media (max-width : 950px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        font-size: 60px;
+    }
+    .show.active{
+        display: block;
+    }
+
+    .toggle-button {
+        display: flex;
+        width: 50px;
+        height: 40px;
+    }
+    .navbar-links {
+        display: none;
+    }
+     button{
+        width: 300px;
+        height: 70px;
+    }
+    .display-item h2{
+        font-size: 70px;
+        text-align: center;
+    }
+
+    /* About Section */
+    .about-image{
+        align-items: center;
+    }
+
+    .about-container h3 {
+        font-size: 50px;
+    }
+    .about-container p {
+        font-size: 20px;
+    }
+
+    .about-image .first{
+        height: 50%;
+        width: 35%;
+    }
+    .about-image .second{
+        width: 30%;
+        height: 40%;
+    }
+    .about-image .third{
+        width: 30%;
+        height: 40%;
+    }
+        /* Furnitures Section */
+
+        .furniture-items{
+            flex-direction: column;
+        }
+    
+        .style{
+            width: 100%;
+            height: 100%;
+        }
+        .furniture-one h2{
+            font-size: 60px;
+        }
+         .furniture-one p{
+            font-size: 20px;
+        }
+       
+        .furniture-two{
+                  align-items: start;
+        }
+        .furniture-two img{
+            width: 70%;
+            height: auto;
+      
+        }
+        .bottom{
+            bottom: 20%;
+            left: 70px;
+        }
+
+        /* CONTACT SECTION */
+        .contact-container{
+            height: auto;
+        }
+    
+        .contact-info{
+            flex-direction: column;
+        }
+        .contact-box{
+            width: 90%;
+            margin: 40px;
+        }
+        .contact-me-items{
+            align-items: center;
+        }
+        .contact-box-items h2 {
+            font-size: 40px;
+        }
+    
+        .contact-me h2{
+            font-size: 20px;
+            text-align: center;
+        }
+        .contact-me h5{
+            font-size: 15px;
+            text-align: center;
+        }
+    
+
+}
+
+
+
+
+
+
+
+
+
+        @media (max-width : 600px) {
+
+        .logo{    
+                font-size: 30px;
+            }
+
+            .toggle-button {
+                display: flex;
+                width: 30px;
+                height: 20px;
+            }
+
+            .display-item h2{
+                font-size:40px;
+                text-align: center;
+            }
+            button{
+                width: 200px;
+                height: 50px;
+            }
+
+            /* About section */
+
+            .about-container h3{
+                font-size: 30px;
+            }
+            .about-container p{
+            font-weight: lighter;
+            }
+
+            .ab-text{
+                width: 100%;
+            }
+            .about-text{
+                flex-direction: column;
+                height: 50%;
+            }
+
+            .about-image{
+                align-items: center;
+                width: 100%;
+            }
+
+            .about-image .first{
+                height: 50%;
+                width: 35%;
+            }
+            .about-image .second{
+                width: 30%;
+                height: 40%;
+            }
+            .about-image .third{
+                width: 30%;
+                height: 40%;
+            }
+
+            /* Furniture Section */
+            .furniture-items{
+                flex-direction: column;
+            }
+
+            .style{
+                width: 100%;
+                height: 100%;
+            }
+            .furniture-one h2{
+                font-size: 40px;
+            }
+            .furniture-two{
+                    align-items: start;
+            }
+            .furniture-two img{
+                width: 70%;
+                height: auto;
+        
+            }
+            .bottom{
+                bottom: 40%;
+                left: 30px;
+            }
+
+            /* Contact Section */
+
+            .contact-container{
+                height: auto;
+            }
+
+            .contact-info{
+                flex-direction: column;
+            }
+            .contact-box{
+                width: 90%;
+                margin: 40px;
+            }
+            .contact-me-items{
+                align-items: center;
+            }
+            .contact-box-items h2 {
+                font-size: 20px;
+            }
+
+            .contact-me h2{
+                font-size: 20px;
+                text-align: center;
+            }
+            .contact-me h5{
+                font-size: 15px;
+                text-align: center;
+            }
+            
+            
+            
+            
+            
+            
+        
+        }
+        @media (max-width : 370px) {
+            .display-item{
+                height: 80vh;    
+            }
+        }
+        @media (max-width : 300px) {
+            .navbar .logo{
+                font-size: 20px;
+            }
+
+            .toggle-button{
+                width: 25px;
+                height: 17px;
+            }
+            .text h2{
+                font-size: 30px;
+            }
+
+            /* About Section */
+            .ab-text h3{
+                font-size: 30px;
+            }
+            .ab-text p{
+                font-size: 15px;
+            }
+
+            /* Furnitures Section */
+            .furniture-one h2 {
+                font-size: 30px;
+            }
+            .furniture-one p {
+                font-size: 15px;
+                line-height: 1.2rem;
+                margin: 10px 0;
+            }
+
+            /* Footer Section */
+            .footer-container h1 {
+                font-size: 20px;
+            
+            }
+        }
+
+        /* Animation */
+        .fade-in{
+            opacity: 0;
+            transition: opacity 700ms ease-in;
+        }
+
+        .fade-in.appear{
+            opacity: 1;
+        }
+
+        .from-left{
+            transform: translateX(-50%);
+        }
+        .from-right{
+            transform: translateX(50%);
+        }
+
+        .from-left,
+        .from-right{
+            transition:opacity 700ms ease-in,
+             transform 800ms ease-in;
+            opacity: 0;
+        }
+
+        .from-left.appear,
+        .from-right.appear{
+            transform: translateX(0);
+            opacity: 1;
+        }
+
